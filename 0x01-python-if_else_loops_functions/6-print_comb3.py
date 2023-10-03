@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
-combinations = []
+for i in range(10):
+    for j in range(i + 1, 10):
+        if i != j and i != 8 and j != 9:
+            print("{:d}{:d}, ".format(i, j), end="")
 
-for first_digit in range(10):
-    for second_digit in range(first_digit + 1, 10):
-        if first_digit != second_digit:
-            combinations.append("{:d}{:d}".format(first_digit, second_digit))
+print("{:d}{:d}".format(8, 9))
 
-print(", ".join(combinations))
