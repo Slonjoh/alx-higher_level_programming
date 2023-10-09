@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    # Use slicing to get the first two elements from each tuple or 0 if they are missing
+    # Use slicing 2 gt d 1st 2 elements 4rm each tuple or 0 if they re missing
     a1 = tuple_a[0] if len(tuple_a) > 0 else 0
     a2 = tuple_a[1] if len(tuple_a) > 1 else 0
     b1 = tuple_b[0] if len(tuple_b) > 0 else 0
