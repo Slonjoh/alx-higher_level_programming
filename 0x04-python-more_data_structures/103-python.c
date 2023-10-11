@@ -1,7 +1,4 @@
 #include <Python.h>
-#include <object.h>
-#include <listobject.h>
-#include <string.h>
 /**
  * print_python_bytes - print basic shit about python
  * byte objects
