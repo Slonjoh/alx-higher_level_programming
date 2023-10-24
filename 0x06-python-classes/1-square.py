@@ -16,7 +16,7 @@ class Square:
         __size (int): The size of the square.
 
     Methods:
-        __init__(self, size): Initializes a new instance of the Square class with the given size.
+        __init__(self, size): Init new  Square class with d given size.
     """
     def __init__(self, size):
         self.__size = size
