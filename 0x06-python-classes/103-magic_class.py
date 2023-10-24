@@ -1,5 +1,13 @@
 #!/usr/bin/python3
+"""
+    This class reps a MagicClass with radius attributes 4 geometric cals.
+"""
+
+
 import math
+"""
+Imports math to be used
+"""
 
 
 class MagicClass:
