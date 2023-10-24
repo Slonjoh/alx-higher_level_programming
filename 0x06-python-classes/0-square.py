@@ -9,7 +9,7 @@ class Square:
     Attributes:
         None
 
-    Methods:
+    Returns:
         None
     """
     pass
