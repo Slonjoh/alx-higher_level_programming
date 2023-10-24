@@ -1,6 +1,17 @@
 #!/usr/bin/python3
+"""
+    This class represents a square.
+"""
+
+
 class Square:
+    """
+    This class represents a square.
+    """
     def __init__(self, size=0):
+        """
+        Initializes a new square with a given size and position.
+        """
         self.size = size
 
     @property
