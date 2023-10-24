@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-    """
-    This is a simple Square class.
-    """
+# This is a simple Square class.
 
 
 class Square:
