@@ -1,0 +1,83 @@
+The 5-text_indentation Module:
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+    >>> t="Hello. I am a string? Here is what you should do: parse me."
+
+Correct Usage:
+
+    >>> text_indentation("Howdy, Yall!")
+    Howdy, Yall!
+
+    >>> text_indentation(t)
+    Hello.
+    <BLANKLINE>
+    I am a string?
+    <BLANKLINE>
+    Here is what you should do:
+    <BLANKLINE>
+    parse me.
+    <BLANKLINE>
+
+    >>> t="Hello. : \nI am a string? .\n"
+    >>> text_indentation(t)
+    Hello.
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    <BLANKLINE>
+    I am a string?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    <BLANKLINE>
+
+    >>> t=" : . ? "
+    >>> text_indentation(t)
+    :
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+
+    >>> t = "    MY SPOON IS TOO BIG!...    I am a banana.\n     blearg    "
+    >>> text_indentation(t)
+    MY SPOON IS TOO BIG!.
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    I am a banana.
+    <BLANKLINE>
+    <BLANKLINE>
+    blearg
+
+    >>> t = "Mwa" + "ha" * 2
+    >>> text_indentation(t)
+    Mwahaha
+
+    >>> text_indentation("")
+
+On Errors:
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+    >>> text_indentation("ble", "ooh", "wah")
+    Traceback (most recent call last):
+    TypeError: text_indentation() takes 1 positional argument but 3 were given
+
+    >>> text_indentation(4)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(-4)
+    Traceback (most recent call last):
+    TypeError: text must be a string
