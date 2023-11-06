@@ -2,6 +2,8 @@
 """
 Class representing a basic geometry.
 """
+
+
 class BaseGeometry:
     """
     Class representing a basic geometry.
