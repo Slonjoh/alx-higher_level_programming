@@ -1,0 +1,60 @@
+""" Test cases for MyList """
+
+""" Import MyList class """
+>>> MyList = __import__('1-my_list').MyList
+
+# Test case 1: Appending integers to an empty MyList, sorting, and printing.
+>>> my_list = MyList()
+>>> my_list.append(9)
+>>> my_list.append(6)
+>>> my_list.append(3)
+>>> my_list.append(12)
+>>> my_list.append(15)
+>>> my_list.print_sorted()
+[3, 6, 9, 12, 15]
+
+# Test case 2: Printing an unsorted list.
+>>> print(my_list)
+[9, 6, 3, 12, 15]
+
+# Test case 3: Creating a MyList from a string, printing it, and then sorting and printing it.
+>>> my_list = MyList("holberton")
+>>> print(my_list)
+['h', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n']
+>>> my_list.print_sorted()
+['b', 'e', 'h', 'l', 'n', 'o', 'o', 'r', 't']
+
+# Test case 4: Creating a MyList from a list of integers, printing it, and then sorting and printing it.
+>>> my_list = MyList([3, 2, 8, 10])
+>>> print(my_list)
+[3, 2, 8, 10]
+>>> my_list.print_sorted()
+[2, 3, 8, 10]
+
+# Test case 5: Appending integers to an empty MyList, printing, and then appending more integers and printing them sorted.
+>>> my_list = MyList()
+>>> my_list.append(9)
+>>> my_list.append(6)
+>>> print(my_list)
+[9, 6]
+>>> my_list.print_sorted()
+[6, 9]
+>>> my_list.append(-10)
+>>> my_list.append(-1)
+>>> my_list.print_sorted()
+[-10, -1, 6, 9]
+
+# Test case 6: Creating an empty MyList and printing it (before and after sorting).
+>>> my_list = MyList()
+>>> print(my_list)
+[]
+>>> my_list.print_sorted()
+[]
+>>> my_list = MyList()
+>>> my_list.append(9)
+>>> my_list.append(6)
+>>> print(my_list)
+[9, 6]
+>>> my_list.print_sorted() == my_list
+[6, 9]
+False
