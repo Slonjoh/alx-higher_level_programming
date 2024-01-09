@@ -5,5 +5,10 @@ module.exports.Rectangle = function Rectangle (w, h) {
     this.width = w;
     this.height = h;
   }
+  this.print = function () {
+    for (let i = 0; i < h; i++) {
+      console.log(Array(w + 1).join('X'));
+    }
+  };
   return this;
 };
