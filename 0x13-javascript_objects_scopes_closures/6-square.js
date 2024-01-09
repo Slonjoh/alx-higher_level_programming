@@ -1,8 +1,19 @@
 #!/usr/bin/node
+const SquareP = require('./5-square');
 
-const Square = require('./5-square.js').Square;
+class Square extends SquareP {
+  charPrint (c) {
+    if (c === undefined) {
+      c = 'X';
+    }
+    for (let i = 0; i < this.height; i++) {
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
+        s += c;
+      }
+      console.log(s);
+    }
+  }
+}
 
-Square.prototype.charPrint = function (c) {
-  if (c) { console.log(Array(this.size + 1).join(Array(this.size + 1).join(c) + '\n').slice(0, -1)); } else { this.print(); }
-};
-exports.Square = Square;
+module.exports = Square;

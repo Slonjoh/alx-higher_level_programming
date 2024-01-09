@@ -1,9 +1,11 @@
 #!/usr/bin/node
-
-module.exports.Rectangle = function Rectangle (w, h) {
-  if (Number(w) > 0 && Number(h) > 0) {
-    this.width = w;
-    this.height = h;
+class Rectangle {
+  constructor (w, h) {
+    if ((w > 0) && (h > 0)) {
+      this.width = w;
+      this.height = h;
+    }
   }
-  return this;
-};
+}
+
+module.exports = Rectangle;
