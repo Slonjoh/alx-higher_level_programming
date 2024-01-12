@@ -15,6 +15,6 @@ if __name__ == "__main__":
                    LIKE BINARY 'N%'
                    ORDER BY 'states.id' ASC""")
     for state in states:
-            print("({}, '{}')".format(state[0], state[1]))
+        print("({}, '{}')".format(state[0], state[1]))
     states.close()
     db.close()
